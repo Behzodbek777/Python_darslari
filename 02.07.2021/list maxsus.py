@@ -1,18 +1,19 @@
+#ro'yxatni istalgan indeksiga istalgan elementni kiritish algoritmi:
 royxat = ["ferrari", "chevrolet", "lexus", "malibu", "Rolls Royce", "BMW", "Daewo", "Ravon"]
-a=(input("qiymat kiriting:"))
-b=int(input("indeks kiriting:"))
-c=len(royxat)
+element=(input("qiymat kiriting:"))
+indeks1=int(input("indeks kiriting:"))
+uzunlik=len(royxat)
 i=1
 j=1
-e=royxat[c-1]
-r=c-1
+oxirgiElement=royxat[uzunlik-1]
+r=uzunlik-1
 for  i in range(r):
-    if i<b:
+    if i<indeks1:
         continue
     else:
-        royxat[c-(j)]=royxat[c-(j+1)]
+        royxat[uzunlik-(j)]=royxat[uzunlik-(j+1)]
     i+=1
     j+=1
-royxat[b]=a
-royxat.append(e)
+royxat[indeks1]=element
+royxat.append(oxirgiElement)
 print(royxat)
